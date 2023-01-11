@@ -1,0 +1,670 @@
+body {
+    font-family: sans-serif;
+}
+
+.header {
+    height: calc(100vh - 102px) ;
+    width: 100%;
+    background: black;
+    background: #C33764;  /* fallback colour. Make sure this is just one solid colour. */
+    background: -webkit-linear-gradient(rgba(59, 60, 63, 0.8), rgba(43, 39, 40, 0.8)), url(./Advanced-carpentry-and-joinery.jpg);
+    color: white;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+}
+
+
+.header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.header--middle {
+    mix-blend-mode: screen;
+    background-color: white;
+    color: black;
+    border-radius: .25em;
+    padding: .35em; 
+    position: relative; /* Needed to position the cutout text in the middle of the image */
+    font-size: 1.5em;
+    letter-spacing: .35rem;
+    margin: .2em;
+}
+
+.header p:last-of-type{
+    font-size: 1.25em;
+    margin: .7250em;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.logo img{
+    width: 70px;
+    height: 70px;
+    padding: 0 40px 0 0;
+    color: #000;
+    overflow-wrap: break-word;
+    text-decoration: underline;
+      text-decoration-color: currentcolor;
+    -webkit-text-decoration-color: #ff422a;
+    text-decoration-color: #ff422a;
+    text-underline-position: under;
+    word-wrap: break-word;
+  }
+
+
+body.home header {
+    align-items: center;
+    background: #fff;
+    display: flex;
+    left: 0;
+    opacity: 1;
+    padding: 0 0 0 4%;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+    margin: 0;
+box-sizing: border-box;
+transition: all .2s cubic-bezier(.645,.045,.355,1);
+}
+
+.navbar {
+    flex-grow: 1;
+}
+
+.navbar__menu {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar__menu > li {
+    align-items: center;
+    display: flex;
+    flex: 1 1 0;
+    text-align: center;
+    margin: 0;
+padding: 0;
+
+}
+
+.navbar__menu > li a {
+    align-items: center;
+    display: flex;
+    flex: 1 1 0;
+    text-align: center;
+    margin: 0;
+padding: 0;
+text-decoration: none;
+text-transform: uppercase;
+color: rgb(0, 0, 0);
+}
+
+.navbar__menu--uprava {
+    display: block;
+    padding: 30px 40px;
+    position: relative;
+    width: 280px;
+    z-index: 1;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+font-weight: 700;
+text-align: left;
+letter-spacing: 3px;
+text-underline-position: under;
+word-wrap: break-word;
+font-size: 18px;
+}
+
+i {
+    color: #000;
+    font-size: 24px;
+    position: absolute;
+    right: 30px;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.fas::before {
+    content: ">";
+    color: black;
+}
+
+
+  .last_nav {
+    margin-right: 0;
+    max-width: 280px;
+    background-color: #ff422a;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .banner {
+    background: -webkit-linear-gradient(rgba(45, 43, 43, 0.75), rgba(45, 43, 43, 0.75)), url(./cesta-lesem-jested.jpg);
+    background-size: cover;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .banner__upravy > p:first-of-type {
+    color: white;
+    font-size: 3.75em;
+    margin: 0;
+    max-width: 9em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    line-height: 1.25em;
+  }
+
+  .naceneni_tlacitko{
+    padding: .75em 3.25em .75em 2.5em;
+    background-color: red;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    max-width: 6em;
+}
+
+.banner__upravy {
+    margin-left: 28%;
+}
+
+.zkusenosti {
+    background-color: #F4F9FB;
+
+}
+
+.zkusenosti__uprava {
+    display: flex;
+    justify-content: space-between;
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2em 0 1em 0;
+}
+
+.zkusenosti__uprava p {
+    max-width: 15em;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.15rem;
+    margin-top: 2em;
+}
+
+.zvyrazneni {
+    color: #EB3138;
+}
+
+.karty {
+max-width: 1260px;
+margin: 0 auto;
+margin-top: 6em;
+position: relative;
+display: flex;
+flex-direction: column;
+margin-bottom: 6em;
+}
+
+.karty::before {
+    background: #000;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 50%;
+    margin: 0 0 0 -4px;
+    position: absolute;
+    top: 0;
+    width: 8px;
+    z-index: 1;
+  }
+
+h2.nadpis_karty {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 2rem;
+    margin-top: 4em;
+}
+
+.karty__highlight {
+    align-items: center;
+display: flex;
+margin: 0;
+padding: 0;
+border: 0;
+box-sizing: border-box;
+}
+
+.karty .karty__highlight:nth-of-type(2n) {
+    flex-direction: row-reverse;
+}
+
+.image {
+    flex-basis: 100%;
+height: auto;
+overflow: hidden;
+display: block;
+}
+
+.image img {
+    height: auto;
+max-width: 100%;
+display: block;
+opacity: 0;
+transform: translate3d(100px,0,0);
+transition-timing-function: ease-in-out;
+transition-duration: .5s;
+}
+
+[data-inviewport="fade-left"]{ 
+    transform: translate3d(-100px,0,0) !important;
+  }
+
+.content {
+    box-sizing: border-box;
+-ms-flex-preferred-size: 100%;
+flex-basis: 100%;
+background-position: top;
+background-size: 100% auto;
+display: block;
+}
+
+.content__container {
+    padding: 0 60px;    
+}
+
+.content__container p:first-of-type {
+    font-size: 20px;
+    line-height: 36px;
+    margin: 0 0 30px;
+  }
+
+  .inline_button {
+    color: #ff422a;
+display: inline-block;
+font-size: 16px;
+font-weight: 400;
+letter-spacing: 3px;
+line-height: 24px;
+text-decoration: none;
+text-transform: uppercase;
+  }
+
+  .inline_button--zmena {
+    position: inherit;  
+  }
+
+.postup_realizace {
+    display: flex;
+}
+
+.postup_realizace__nadpis{
+  width: 60vw;
+    background: -webkit-linear-gradient(rgba(45, 43, 43, 0.75), rgba(45, 43, 43, 0.75)), url(./image-proxy.jpg);
+    background-size: cover;
+    height: auto;
+    color: white;
+}
+
+.postup_realizace__vysvetlivky {
+    background-color: #000;
+    width: 40vw;
+    color: white;
+}
+
+.postup_realizace__vysvetlivky__a1 {
+    display: flex;
+}
+
+.postup_realizace__vysvetlivky > div:first-child {
+    margin-top: 5em;
+}
+
+.postup_realizace__vysvetlivky__a1 > p {
+    color: red;
+    font-size: 1.65rem;
+    margin-left: 4em;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+.postup_realizace__vysvetlivky__a2 {
+    margin-left: 10em;
+    font-size: 1.15rem;
+    margin-right: 6em;
+}
+
+.postup_realizace__vysvetlivky__a2 p:first-of-type {
+    font-size: 1.65rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.postup_realizace__vysvetlivky__a1 > p:after {
+    content: "";
+    background-color: rgb(255, 255, 255);
+    width: 5px;
+    height: 50px;
+    top: 10px;
+margin: 0 auto;
+margin-top: .5em;
+    display: block;
+  }
+
+  .postup_realizace__vysvetlivky > div:first-child > P:after {
+    height: 100px;
+  }
+  .postup_realizace__vysvetlivky > div:last-child > P:after {
+    height: 0px;
+  }
+
+  .postup_realizace__nadpis h2 {
+    font-size: 3em;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.postup_realizace__nadpis > div {
+    margin-left: 6em;
+    margin-top: 6em;
+    max-width: 80%;
+}
+
+.vyhody {
+    background-color: #F4F9FB;
+}
+
+.vyhody__uprava {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1260px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2em 0 1em 0;
+    align-items: baseline;
+}
+
+.vyhody__uprava p:first-of-type {
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 600;
+    margin-top: 2em;
+}
+
+.vyhody__uprava p:last-of-type {
+    max-width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+.vyhody__uprava--symbol {
+     max-width: 100px;
+}
+
+.galerie__text h2 {
+    color: #EB0808;
+    font-size: 4em;
+    text-align: right;
+    margin-top: 0;
+    margin-bottom: .5em;
+}
+
+.galerie__text {
+    border-right: 10px solid #000;
+    margin: 0 0 0 auto;
+    overflow: hidden;
+    padding: 10px 40px 10px 0;
+    text-align: right;
+    width: 75%;
+}
+
+.galerie {
+    box-sizing: border-box;
+margin: 0 auto;
+max-width: 1260px;
+position: relative;
+width: 92%;
+margin-top: 8em;
+}
+
+.galerie__text a {
+    display: inline-block;
+font-size: 16px;
+font-weight: 400;
+letter-spacing: 3px;
+line-height: 24px;
+text-decoration: none;
+text-transform: uppercase;
+}
+
+.projekt_zapati {
+    background-color: #F1141D;
+    color: white;
+    text-align: center;
+    padding: 4em 0;
+    margin-top: 4em;
+}
+
+.projekt_zapati h2 {
+    margin-bottom: 2em;
+    font-size: 2em;
+}
+
+footer {
+    background-color: #242424;
+    color: white;
+}
+
+footer h3 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 2em;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.omezeni_sirky {
+    max-width: 1260px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-bottom: 4em;
+    padding-top: 4em;
+}
+
+.galerie__foto__samotne {
+    box-sizing: border-box;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 20px;
+    text-align: left;
+    width: 33%;
+    display: inline-block;
+margin-top: 40px;
+  }
+
+  .thumbnail {
+    background-image: url(./Advanced-carpentry-and-joinery.jpg);
+    background-position: 50%;
+    background-size: cover;
+    display: block;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .thumbnail::after {
+    content: "";
+    display: block;
+    padding: 0 0 100%;
+  }
+
+  .thumbnail::before {
+    border: 0 solid #000;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+content: "";
+height: 100%;
+left: 0;
+position: absolute;
+pointer-events: none;
+top: 0;
+width: 100%;
+transition: all .2s cubic-bezier(.645,.045,.355,1);
+  }
+
+  .thumbnail:hover::before {
+    border-width: 8px;
+height: calc(100% + 40px);
+left: -20px;
+top: -20px;
+width: calc(100% + 40px);
+  }
+
+  .thumbnail:hover {
+    overflow: visible;
+  }
+
+  .thumbnail__content {
+align-items: center;
+background: rgba(57,42,41,.8);
+box-sizing: border-box;
+left: 50%;
+top: 50%;
+transform: translate(-50%,-50%);
+color: #fff;
+display: flex;
+flex-direction: column;
+height: 100%;
+justify-content: center;
+position: absolute;
+margin: 40px 0 0;
+opacity: 0;
+padding: 20px;
+text-align: center;
+width: 100%;
+transition: all .2s cubic-bezier(.645,.045,.355,1);
+  }
+
+.thumbnail:hover .thumbnail__content {
+    margin: 0;
+    opacity: 1;
+}
+
+.thumbnail__content h4 {
+    text-transform: capitalize;
+    margin: 0;
+    font-size: 25px;
+    font-weight: 400;
+letter-spacing: 0;
+line-height: 42px;
+}
+
+.thumbnail__content h5 {
+    margin: 0;
+    font-size: 17px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    font-weight: 400;
+letter-spacing: 3px;
+line-height: 24px;
+}
+
+.fas--cervena::before {
+    color: #EB0808;
+
+}
+
+.fas--cervena {
+    display: inline-block;
+    position: inherit;
+    transform: none;
+}
+
+.galerie__foto {
+    margin-left: -20px;
+margin-right: -20px;
+margin-top: calc(5em - 40px);
+}
+
+.projekt_zapati--zvyrazneni {
+    color: black;
+}
+
+.projekt_zapati h2 {
+    line-height: 1.75em;
+}
+
+.naceneni_tlacitko--black {
+    background-color: transparent;
+    border: 5px solid black;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 1.05rem;
+    font-weight: 500;
+    margin-right: 1em;
+}
+
+.naceneni_tlacitko--red {
+    background-color: transparent;
+    border: 5px solid #EB3138;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+
+.fas--bila::before {
+    color: white;
+}
+
+footer .naceneni_tlacitko {
+    font-size: 14px;
+    margin-right: 0;
+    padding: .75em 2.5em .75em 2.5em;
+    border: 3px solid black;
+}
+
+.footer_last {
+    text-align: left;
+}
+
+footer address {
+    font-style: normal;
+    letter-spacing: 3px;
+    line-height: 1.5em;
+    margin-top: -1em;
+}
+
+footer address > a {
+    color: white;
+}
+
+footer {
+    background-image: url(./house-search-svgrepo-com.png);
+    background-position: 75% 25%;
+    background-repeat: no-repeat;
+    background-size: 30em;
+}
+
+.back_to_top {
+    transform: none;
+    right: 50%;
+}
+

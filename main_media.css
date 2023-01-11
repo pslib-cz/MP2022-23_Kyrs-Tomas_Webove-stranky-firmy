@@ -1,0 +1,353 @@
+@media only screen 
+and (min-width: 0px)
+and (max-width: 999px) {
+
+    .header {
+        height: auto;
+    }
+
+
+    .banner__upravy > p:first-of-type {
+        font-size: 2rem;
+        margin: 0 auto;
+        margin-bottom: 2em;
+        font-weight: bold;
+        line-height: 1.25em;
+        text-align: center;
+      }
+
+      .banner__upravy {
+        margin: 0 auto;
+        max-width: 90%;
+        padding: 2em 0;
+      }
+
+      .banner {
+        height: auto;
+        padding: 2em 0  ;
+      }
+
+      .zkusenosti__uprava {
+        flex-direction: column;
+        margin: 0 8px;
+      }
+
+      .zkusenosti__uprava--symbol {
+        max-width: 100px;
+      }
+
+      .zkusenosti__uprava > div p{
+        text-align: center;
+        max-width: unset;
+        font-size: 1rem;
+        margin-left: 2em;
+        margin-right: 2em;
+        margin-top: .5em;
+        margin-bottom: 2em;
+      }
+
+      h2.nadpis_karty {
+        max-width: 86%;
+        font-size: 1.5rem;
+        margin-top: 1em;
+      }
+
+      .karty {
+        max-width: 86%;
+        margin-top: 3em;
+        margin-bottom: 0em;
+      }
+
+      .karty::before {
+        left: 0;
+      }
+
+      .karty__highlight {
+        display: block;
+      }
+
+      .inline_button {
+        margin-bottom: 3em;
+        font-size: 14px;
+      }
+
+      .content__container p:first-of-type {
+        font-size: 16px;
+      }
+
+      .vyhody__uprava {
+        flex-direction: column;
+      }
+
+      .image img {
+    transform: translate3d(-100px,0,0);
+    }
+
+    .postup_realizace {
+      flex-direction: column;
+    }
+
+    .postup_realizace__nadpis {
+      width: 100%;
+    }
+
+    .postup_realizace__vysvetlivky {
+      width: 100%;
+    }
+    
+    .postup_realizace__vysvetlivky__a1 > p {
+      margin-left: .5em;
+    }
+
+    .postup_realizace__vysvetlivky__a2 p:first-of-type {
+      font-size: 1.25rem;   
+      font-weight: 600;
+      margin-top: .2em;
+     }
+
+    .postup_realizace__vysvetlivky__a2 {
+      margin: 0 auto;
+      margin-left: 2em;
+      margin-right: 2em;
+      font-size: 1rem;
+    }
+
+    .postup_realizace__vysvetlivky > div:first-child > P::after {
+      height: 60px;
+    }
+
+    .postup_realizace__nadpis > div {
+      max-width: 86%;
+      margin: 0 auto;
+      margin-top: 4em;
+    }
+
+    .postup_realizace__nadpis {
+      height: auto;
+      padding-bottom: 3em;
+      margin-top: 3em;
+    }
+
+    .postup_realizace__nadpis h2 {
+      font-size: 2rem;
+    }
+
+    .postup_realizace__nadpis p {
+      font-size: 1.25rem;
+    }
+    .postup_realizace__vysvetlivky > div:first-child {
+       margin-top: 2em;
+    }
+
+    .galerie__foto__samotne {
+      width: 100%;
+    }
+    .galerie {
+      width: 86%;
+      margin-top: 3em;
+    }
+
+    .galerie__text h2 {
+      font-size: 2em;
+    }
+
+    .galerie__text a {
+      font-size: 14px;
+    }
+
+    .galerie__text {
+      padding-right: 25px;
+    }
+
+    .galerie__foto {
+      margin-top: .5em;
+    }
+
+    .content__container {
+      padding: 1em;
+      padding-left: 1.5em;
+    }
+
+    .projekt_zapati h2 {
+      line-height: 1.75em;
+  }
+
+  footer .omezeni_sirky {
+    flex-direction: column;
+  }
+
+  footer .naceneni_tlacitko {
+    margin: 0 auto;
+    display: block;
+    padding: .75em 3.5em .75em 3.5em;
+    max-width: 56%;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+
+  .omezeni_sirky {
+    max-width: 86%;
+  }
+
+  footer h3 {
+    margin-bottom: 1em;
+  }
+
+  nav.navbar {
+    overflow: hidden;
+    position: fixed;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 86%;
+    margin: 0 auto;
+    top: 120px;
+    margin-bottom: 4em;
+  }
+
+  #navbar {
+  
+  }
+  
+  .navbar .navbar-menu {
+    display: none;
+    padding-left: 0;
+  }
+
+   a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: black;
+    margin-right: 8px;
+  }
+
+   a.icon {
+      color: black;
+      padding: 26px 28px;
+      text-decoration: none;
+      font-size: 30px;
+      display: block;
+    }
+
+    .vyhody__uprava div {
+      margin: 0 auto;
+    }
+
+    body.home header {
+      flex-direction: column;
+      z-index: 10;
+      padding: 0;
+      position: relative;
+    }
+
+    .navbar__menu {
+      flex-direction: column;
+    }
+
+    .navbar__menu > li {
+      border-bottom: 1px solid #fff;
+      display: block;
+
+    }
+
+    .navbar__menu > li a {
+flex-grow: 1;
+letter-spacing: 3px;
+line-height: 20px;
+padding: 1.65em;
+    }
+
+    .navbar__menu li {
+      text-align: left;
+    }
+
+    .navbar__menu--uprava {
+      padding: 0;
+width: auto;
+display: block;
+padding: 0;
+position: relative;
+width: 100%;
+z-index: 1;
+ }
+
+ .last_nav {
+  max-width: unset;
+ }
+
+ .navbar {
+width: 86%;
+padding-bottom: 1em;
+ }
+
+ .navbar__menu {
+  display: none;
+  background-color: #F4F9FB;
+ }
+
+ .header__hamburger {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-bottom: 2em;
+  z-index: 100;
+ }
+
+ #navbar{
+  opacity: 0;
+  z-index: 101;
+  transition: all .3s cubic-bezier(.645,.045,.355,1);
+ }
+
+ .hamburger_on .header__hamburger {
+  padding-bottom: 7em;
+  transition: all .3s cubic-bezier(.645,.045,.355,1);
+ }
+
+ .hamburger_on #navbar {
+  opacity: 1;
+ }
+
+ .hamburger_on main, .hamburger_on .header { 
+  opacity: .4;
+ }
+
+ .hamburger_on .navbar {
+  transform: translateY(-60px);
+  transition: all .25s cubic-bezier(.645,.045,.355,1);
+ }
+
+ .header__firma {
+  margin-top: 4em;
+ }
+
+ .header h1 {
+  font-size: 2rem;
+  margin-bottom: 2em;
+ }
+
+ .header--middle {
+  font-size: 1.25rem;
+}
+
+.header p:last-of-type {
+  font-size: 1.1rem;
+  margin-top: 4em;
+}
+
+.naceneni_tlacitko--red {
+  border: 3px solid #EB3138;
+text-transform: uppercase;
+position: relative;
+font-size: 1rem;
+font-weight: 500;
+padding: .75em 3.25em .75em 2.5em;
+display: block;
+margin: 0 auto;
+max-width: 56%;
+}
+}

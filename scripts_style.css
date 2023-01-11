@@ -1,0 +1,49 @@
+.back-to-top {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    border-radius: 100%;
+    background: #F1141D;
+    padding: .75rem;
+    border: none;
+    cursor: pointer;
+    opacity: 100%;
+    transition: opacity 0.5s;
+  }
+  
+  .back-to-top:hover {
+    opacity: 60%;
+  }
+  
+  .hidden {
+    opacity: 0%;
+  }
+  
+  .back-to-top-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: white;
+  }
+  
+  .progress-bar {
+    height: 1rem;
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+    /* inViewport */
+    
+    [data-inviewport="fade-right"].is-inViewport { 
+      opacity: 1;
+      transform: translateZ(0);
+  transition-timing-function: ease-in-out;
+    }
+  
+    [data-inviewport="fade-left"].is-inViewport { 
+      opacity: 1;
+      transform: translateZ(0) !important;
+      transition-duration: .5s;
+  transition-timing-function: ease-in-out;
+    }

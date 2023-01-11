@@ -1,0 +1,123 @@
+html {
+
+}
+
+.nadpis {
+    text-align: center;
+}
+
+.recenze {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.recenze__obal {
+    box-shadow: 5px 5px 5px #d6d5d593;
+    border: 1px solid gainsboro;
+    max-width: 15%;
+    padding: 1em 2em .5em 2em;
+}
+
+.recenze--text {
+    font-style: italic;
+}
+
+.recenze__zapati {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+.recenze__zapati--mesto {
+    color: rgba(187, 187, 187, 0.815);
+    margin-top: 0;
+}
+
+.recenze__zapati p:first-child {
+    margin-bottom: 0.25em;
+}
+
+.recenze__zapati p {
+    text-transform: capitalize;
+}
+
+.citace {
+    margin-top: 1em;
+    padding: 2em;
+}
+
+.citace--text {
+    font-size: 1.4em;
+    max-width: 25%;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 2
+}
+
+.citace--autor {
+    margin-top: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: .9em;
+}
+
+
+.banner {
+    background-image: url(./Bez\ názvu.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-size: cover;
+    height: 600px;
+    color: white;
+}
+
+.banner__text {
+    max-width: 25%;
+    margin-left: 60%;
+    position: relative;
+    top: 30%;
+}
+
+.naceneni_tlacitko{
+    padding: .5em 2.5em;
+    background-color: red;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+.banner__text h3 {
+    font-size: 2.15em;
+    margin-bottom: .5em;
+}
+
+.banner__text p {
+    font-size: 1.25em;
+    margin-bottom: 4em;
+}
+
+.first_text {
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.first_text__popis {
+    max-width: 25%;
+}
+
+.first_text__popis h3 {
+    font-size: 2em;
+}
+
+.obklady {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+}
+
+.first_text__popis  p:last-of-type {
+    margin-bottom: 5em;
+}
