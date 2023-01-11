@@ -668,3 +668,7 @@ footer {
     right: 50%;
 }
 
+.icon {
+    display: none;
+}
+
