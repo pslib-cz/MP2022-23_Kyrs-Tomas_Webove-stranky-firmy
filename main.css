@@ -266,10 +266,10 @@ display: block;
     height: auto;
 max-width: 100%;
 display: block;
-opacity: 0;
+/*opacity: 0;
 transform: translate3d(100px,0,0);
 transition-timing-function: ease-in-out;
-transition-duration: .5s;
+transition-duration: .5s;*/
 }
 
 [data-inviewport="fade-left"]{ 
@@ -671,4 +671,3 @@ footer {
 .icon {
     display: none;
 }
-

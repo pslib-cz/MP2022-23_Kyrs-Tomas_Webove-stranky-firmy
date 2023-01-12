@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./main_media.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./scripts_style.css">
+    <link rel="stylesheet" href="./aos.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
@@ -29,7 +30,7 @@
   <header id="navbar">
 
        <nav class="navbar">
-            <menu class="navbar__menu">
+            <ul class="navbar__menu">
                 <li><a href="#novinky">novinky</a></li>
                 <li><a href="./onas.html">o nás</a></li>
                 <li><a href="./okoli.html">okolí</a></li>
@@ -39,7 +40,7 @@
                         <i class="fas"></i>
                     </span>
                 </a></li>
-            </menu>
+            </ul>
     </nav>
   </header>
 
@@ -60,17 +61,17 @@
     <section class="zkusenosti">
   <div class="zkusenosti__uprava">
     <div>    
-      <img class="zkusenosti__uprava--symbol" src = "./project-work-icon.svg" alt="Family firm SVG"/>
+      <img class="zkusenosti__uprava--symbol" src = "./svg/project-work-icon.svg" alt="Family firm SVG"/>
       <p>přes <span class="zvyrazneni">5 let</span> předešlých zkušeností</p>
     </div>
     
     <div>    
-      <img class="zkusenosti__uprava--symbol" src = "./users.svg" alt="Family firm SVG"/>
+      <img class="zkusenosti__uprava--symbol" src = "./svg/users.svg" alt="Family firm SVG"/>
       <p>přes <span class="zvyrazneni">5 let</span> předešlých zkušeností</p>
     </div>
     
     <div>    
-      <img class="zkusenosti__uprava--symbol" src = "./project-work-icon.svg" alt="Family firm SVG"/>
+      <img class="zkusenosti__uprava--symbol" src = "./svg/project-work-icon.svg" alt="Family firm SVG"/>
       <p>přes <span class="zvyrazneni">5 let</span> předešlých zkušeností</p>
     </div>
   </div>
@@ -80,7 +81,7 @@
           <h2 class="nadpis_karty">Je vaše zakázka pro stavební firmy příliš malá či příliš nákladná a sami si neporadíte? Pak jste u nás na správném místě.</h2>
   <div class="karty">
   <div class="karty__highlight">
-    <div class="image"><img data-inviewport="fade-right" src="./istockphoto-1093625724-612x612.jpg" alt=""></div>
+    <div class="image"><img class="aos-init aos-animate" data-aos="fade-left" data-aos-duration="500" src="./istockphoto-1093625724-612x612.jpg" alt=""></div>
   <div class="content">
   
   <div class="content__container">
@@ -92,7 +93,7 @@
   </div>
   </div>
   <div class="karty__highlight">
-    <div class="image"><img data-inviewport="fade-left" src="./IMG_20210226_193616.jpg" alt=""></div>
+    <div class="image"><img class="aos-init aos-animate" data-aos="fade-right" data-aos-duration="500" src="./IMG_20210226_193616.jpg" alt=""></div>
   <div class="content">
   
   <div class="content__container">
@@ -104,7 +105,7 @@
   </div>
   </div>
   <div class="karty__highlight">
-    <div class="image"><img data-inviewport="fade-right" src="./istockphoto-1093625724-612x612.jpg" alt=""></div>
+    <div class="image"><img class="aos-init aos-animate" data-aos="fade-left" data-aos-duration="500" src="./istockphoto-1093625724-612x612.jpg" alt=""></div>
   <div class="content">
   
   <div class="content__container">
@@ -165,19 +166,19 @@
               <section class="vyhody">
                 <div class="vyhody__uprava">
                   <div>    
-                    <img class="vyhody__uprava--symbol" src = "./Path 74.svg" alt="Family firm SVG"/>
+                    <img class="vyhody__uprava--symbol" src = "./svg/Path 74.svg" alt="Family firm SVG"/>
                     <p>přes předešlých zkušeností</p>
                     <p>Vždy je vše pečlivě zkontrolováno a poté předáno klientovi do dobrých rukou</p>
                   </div>
                   
                   <div>    
-                    <img class="vyhody__uprava--symbol" src = "./gears-set-svgrepo-com.svg" alt="Family firm SVG"/>
+                    <img class="vyhody__uprava--symbol" src = "./svg/gears-set-svgrepo-com.svg" alt="Family firm SVG"/>
                     <p>přes předešlých zkušeností</p>
                     <p>Vždy je vše pečlivě zkontrolováno a poté předáno klientovi do dobrých rukou</p>
                   </div>
                   
                   <div>    
-                    <img class="vyhody__uprava--symbol" src = "./chat-svgrepo-com.svg" alt="Family firm SVG"/>
+                    <img class="vyhody__uprava--symbol" src = "./svg/chat-svgrepo-com.svg" alt="Family firm SVG"/>
                     <p>přes předešlých zkušeností</p>
                     <p>Vždy je vše pečlivě zkontrolováno a poté předáno klientovi do dobrých rukou</p>
                   </div>
@@ -314,6 +315,16 @@ function myFunction() {
 }
 </script>
 <script src="./hamburger.js"></script> 
+<script src="./aos.js"></script> 
+
+
+
+<script type="text/javascript">
+  AOS.init({
+        easing: 'ease-in-out-sine'
+      });
+</script>
+
 <script src="./observer.js"></script> 
 <script src="./back_to_top.js"></script> 
 </body>

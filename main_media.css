@@ -312,6 +312,9 @@ padding-bottom: 1em;
   opacity: 1;
  }
 
+ .hamburger_on main, .hamburger_on .header { 
+  opacity: .4;
+ }
 
  .hamburger_on .navbar {
   transform: translateY(-60px);
