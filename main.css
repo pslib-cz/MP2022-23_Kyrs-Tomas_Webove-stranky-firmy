@@ -7,7 +7,7 @@ body {
     width: 100%;
     background: black;
     background: #C33764;  /* fallback colour. Make sure this is just one solid colour. */
-    background: -webkit-linear-gradient(rgba(59, 60, 63, 0.8), rgba(43, 39, 40, 0.8)), url(./Advanced-carpentry-and-joinery.jpg);
+    background: -webkit-linear-gradient(rgba(59, 60, 63, 0.8), rgba(43, 39, 40, 0.8)), url(./img/Advanced-carpentry-and-joinery.jpg);
     color: white;
         display: flex;
     justify-content: center;
@@ -155,7 +155,7 @@ i {
   }
 
   .banner {
-    background: -webkit-linear-gradient(rgba(45, 43, 43, 0.75), rgba(45, 43, 43, 0.75)), url(./cesta-lesem-jested.jpg);
+    background: -webkit-linear-gradient(rgba(45, 43, 43, 0.75), rgba(45, 43, 43, 0.75)), url(./img/cesta-lesem-jested.jpg);
     background-size: cover;
     height: 750px;
     display: flex;
@@ -310,13 +310,13 @@ text-transform: uppercase;
     position: inherit;  
   }
 
-.postup_realizace {
+  .postup_realizace {
     display: flex;
 }
 
 .postup_realizace__nadpis{
   width: 60vw;
-    background: -webkit-linear-gradient(rgba(45, 43, 43, 0.75), rgba(45, 43, 43, 0.75)), url(./image-proxy.jpg);
+    background: -webkit-linear-gradient(rgba(45, 43, 43, 0.75), rgba(45, 43, 43, 0.75)), url(./img/image-proxy.jpg);
     background-size: cover;
     height: auto;
     color: white;
@@ -326,6 +326,12 @@ text-transform: uppercase;
     background-color: #000;
     width: 40vw;
     color: white;
+    min-height: 600px;
+}
+
+.postup_realizace__vysvetlivky__a2:last-child {
+    max-width: 60%;
+    margin-bottom: 3em;
 }
 
 .postup_realizace__vysvetlivky__a1 {
@@ -339,20 +345,20 @@ text-transform: uppercase;
 .postup_realizace__vysvetlivky__a1 > p {
     color: red;
     font-size: 1.65rem;
-    margin-left: 4em;
+    margin-left: 1em;
     font-weight: 500;
+    margin-right: 2em;
     margin-top: 0;
+    line-height: 16px;
 }
 
 .postup_realizace__vysvetlivky__a2 {
-    margin-left: 10em;
     font-size: 1.15rem;
-    margin-right: 6em;
 }
 
 .postup_realizace__vysvetlivky__a2 p:first-of-type {
     font-size: 1.65rem;
-    margin-bottom: 0;
+    line-height: 16px;
     margin-top: 0;
 }
 
@@ -360,15 +366,11 @@ text-transform: uppercase;
     content: "";
     background-color: rgb(255, 255, 255);
     width: 5px;
-    height: 50px;
+    height: calc(100% - 16px);
     top: 10px;
 margin: 0 auto;
 margin-top: .5em;
     display: block;
-  }
-
-  .postup_realizace__vysvetlivky > div:first-child > P:after {
-    height: 100px;
   }
   .postup_realizace__vysvetlivky > div:last-child > P:after {
     height: 0px;
@@ -501,7 +503,7 @@ margin-top: 40px;
   }
 
   .thumbnail {
-    background-image: url(./Advanced-carpentry-and-joinery.jpg);
+    background-image: url(./img/Advanced-carpentry-and-joinery.jpg);
     background-position: 50%;
     background-size: cover;
     display: block;
@@ -657,7 +659,7 @@ footer address > a {
 }
 
 footer {
-    background-image: url(./house-search-svgrepo-com.png);
+    background-image: url(./img/house-search-svgrepo-com.png);
     background-position: 75% 25%;
     background-repeat: no-repeat;
     background-size: 30em;
@@ -668,6 +670,3 @@ footer {
     right: 50%;
 }
 
-.icon {
-    display: none;
-}
