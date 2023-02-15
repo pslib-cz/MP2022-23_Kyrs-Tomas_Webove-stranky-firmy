@@ -82,14 +82,15 @@ and (max-width: 999px) {
       .image img {
     transform: translate3d(-100px,0,0);
     }
+
     .postup_realizace {
       flex-direction: column;
     }
-  
+
     .postup_realizace__nadpis {
       width: 100%;
     }
-  
+
     .postup_realizace__vysvetlivky {
       width: 100%;
     }
@@ -97,40 +98,40 @@ and (max-width: 999px) {
     .postup_realizace__vysvetlivky__a1 > p {
       margin-left: .5em;
     }
-  
+
     .postup_realizace__vysvetlivky__a2 p:first-of-type {
       font-size: 1.25rem;   
       font-weight: 600;
       margin-top: .2em;
      }
-  
+
     .postup_realizace__vysvetlivky__a2 {
       margin: 0 auto;
       margin-left: 2em;
       margin-right: 2em;
       font-size: 1rem;
     }
-  
+
     .postup_realizace__vysvetlivky > div:first-child > P::after {
       height: 60px;
     }
-  
+
     .postup_realizace__nadpis > div {
       max-width: 86%;
       margin: 0 auto;
       margin-top: 4em;
     }
-  
+
     .postup_realizace__nadpis {
       height: auto;
       padding-bottom: 3em;
       margin-top: 3em;
     }
-  
+
     .postup_realizace__nadpis h2 {
       font-size: 2rem;
     }
-  
+
     .postup_realizace__nadpis p {
       font-size: 1.25rem;
     }
@@ -292,8 +293,12 @@ padding-bottom: 1em;
   position: fixed;
   top: 0;
   width: 100%;
-  padding-bottom: 2em;
+  padding-bottom: 3em;
   z-index: 100;
+ }
+
+ .navbar__menu--uprava .fas{
+  right: -15px;
  }
 
  #navbar{
@@ -319,6 +324,16 @@ padding-bottom: 1em;
   transform: translateY(-60px);
   transition: all .25s cubic-bezier(.645,.045,.355,1);
  }
+
+ body header {
+  padding: 0 0 0 4%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 100;
+}
 
  .header__firma {
   margin-top: 4em;

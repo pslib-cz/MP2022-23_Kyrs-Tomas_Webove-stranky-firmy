@@ -1,0 +1,288 @@
+@media only screen 
+and (min-width: 0px)
+and (max-width: 999px) {
+
+footer .naceneni_tlacitko {
+    margin: 0 auto;
+    display: block;
+    padding: .75em 3.5em .75em 3.5em;
+    max-width: 56%;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+
+  nav.navbar {
+    overflow: hidden;
+    position: fixed;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 86%;
+    margin: 0 auto;
+    top: 120px;
+    margin-bottom: 4em;
+  }
+
+  #navbar {
+  
+  }
+  
+  .navbar .navbar-menu {
+    display: none;
+    padding-left: 0;
+  }
+
+   a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: black;
+    margin-right: 8px;
+  }
+
+   a.icon {
+      color: black;
+      padding: 26px 28px;
+      text-decoration: none;
+      font-size: 30px;
+      display: block;
+    }
+
+    .vyhody__uprava div {
+      margin: 0 auto;
+    }
+
+    body.home header {
+      flex-direction: column;
+      z-index: 10;
+      padding: 0;
+      position: relative;
+    }
+
+    .navbar__menu {
+      flex-direction: column;
+    }
+
+    .navbar__menu > li {
+      border-bottom: 1px solid #fff;
+      display: block;
+
+    }
+
+    .navbar__menu > li a {
+flex-grow: 1;
+letter-spacing: 3px;
+line-height: 20px;
+padding: 1.65em;
+    }
+
+    .navbar__menu li {
+      text-align: left;
+    }
+
+    .navbar__menu--uprava {
+      padding: 0;
+width: auto;
+display: block;
+padding: 0;
+position: relative;
+width: 100%;
+z-index: 1;
+ }
+
+ .last_nav {
+  max-width: unset;
+ }
+
+ .navbar {
+width: 86%;
+padding-bottom: 1em;
+ }
+
+ .navbar__menu {
+  display: none;
+  background-color: #F4F9FB;
+ }
+
+ .header__hamburger {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-bottom: 2em;
+  z-index: 100;
+ }
+
+ .header_image h1 {
+    font-size: 2rem;
+ }
+
+ #navbar{
+  opacity: 0;
+  z-index: 101;
+  transition: all .3s cubic-bezier(.645,.045,.355,1);
+ }
+
+ .hamburger_on .header__hamburger {
+  padding-bottom: 7em;
+  transition: all .3s cubic-bezier(.645,.045,.355,1);
+ }
+
+ .hamburger_on #navbar {
+  opacity: 1;
+ }
+
+ .hamburger_on main, .hamburger_on .header { 
+  opacity: .4;
+ }
+
+ .hamburger_on .navbar {
+  transform: translateY(-60px);
+  transition: all .25s cubic-bezier(.645,.045,.355,1);
+ }
+
+  .formular--tlacitko {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 3em;
+  }
+  
+
+  footer .omezeni_sirky {
+    flex-direction: column;
+  }
+
+  .omezeni_sirky {
+    max-width: 86%;
+  }
+
+  .quick_info {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position:initial;
+    top: 5em;
+    right: 20em;
+    padding: .5em 1em;
+    max-width: 90%;
+    margin: 0 auto;
+    line-height: 36px;
+}
+
+main {
+    max-width: 100%;
+}
+
+.formular--writing {
+    width: 250px;
+}
+
+.formular {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header_image > div {
+    width: 90%;
+    margin: 0 auto;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-left: 0;
+}
+
+.formular {
+    padding: 0;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.quick_info {
+    width: 60%;
+    margin-bottom: 3em;
+}
+
+}
+
+@media only screen 
+and (min-width: 500px)
+and (max-width: 999px)  {
+    .formular--writing {
+        width: 350px;
+    }
+
+    .header_image > div {
+        margin: 0 auto;
+    }
+
+    .quick_info {
+        width: 60%;
+        margin-bottom: 3em;
+    }
+
+    .formular h2 {
+        margin-top: 3em;
+    }
+
+    .formular--tlacitko {
+        font-size: 1.05em;
+        margin-bottom: 5em;
+    }
+
+    .formular {
+        padding: 1px 30px;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+
+}
+
+@media only screen 
+and (min-width: 750px)
+and (max-width: 999px) {
+    .formular--writing {
+        width: 450px;
+    }
+
+    .quick_info {
+        width: 50%;
+        margin-bottom: 3em;
+    }
+}
+
+@media only screen 
+and (min-width: 1000px)
+and (max-width: 1200px) {
+    .quick_info {
+        right: 1em;
+        width: 30%;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .header_image > div {
+        width: 50%;
+    }
+
+    .formular {
+        margin-left: 0;
+        width: 60%;
+    }
+
+    .formular--writing {
+        width: 400px;
+    }
+}
+
+@media only screen 
+and (min-width: 1201px)
+and (max-width: 1500px) {
+    .quick_info {
+        right: 2em;
+    }
+}
