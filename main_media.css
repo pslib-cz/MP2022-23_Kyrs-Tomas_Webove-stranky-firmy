@@ -201,11 +201,8 @@ and (max-width: 999px) {
     width: 86%;
     margin: 0 auto;
     top: 120px;
+    max-width: 450px;
     margin-bottom: 4em;
-  }
-
-  #navbar {
-  
   }
   
   .navbar .navbar-menu {

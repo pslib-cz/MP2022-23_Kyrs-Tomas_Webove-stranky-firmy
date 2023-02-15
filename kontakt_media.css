@@ -20,6 +20,7 @@ footer .naceneni_tlacitko {
     margin: 0 auto;
     top: 120px;
     margin-bottom: 4em;
+    max-width: 450px;
   }
 
   #navbar {
@@ -192,17 +193,34 @@ main {
     padding-left: 0;
 }
 
+body.home header {
+    flex-direction: column;
+    z-index: 10;
+    padding: 0;
+    position: relative;
+    align-items: center;
+background: #fff;
+display: flex;
+  }
+
 .formular {
     padding: 0;
     width: 90%;
     margin: 0 auto;
 }
 
+.hamburger_on main, .hamburger_on .header_image { 
+    opacity: .4;
+   }
+
 .quick_info {
     width: 60%;
     margin-bottom: 3em;
 }
 
+.navbar__menu--uprava .fas {
+    right: -15px;
+}
 }
 
 @media only screen 
