@@ -7,7 +7,7 @@ body {
     width: 100%;
     background: black;
     background: #C33764;  /* fallback colour. Make sure this is just one solid colour. */
-    background: -webkit-linear-gradient(rgba(59, 60, 63, 0.8), rgba(43, 39, 40, 0.8)), url(./img/Advanced-carpentry-and-joinery.jpg);
+    background: -webkit-linear-gradient(rgba(59, 60, 63, 0.8), rgba(43, 39, 40, 0.8)), url(../img/Advanced-carpentry-and-joinery.jpg);
     color: white;
         display: flex;
     justify-content: center;
