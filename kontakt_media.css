@@ -82,14 +82,16 @@ padding: 1.65em;
     }
 
     .navbar__menu--uprava {
-      padding: 0;
-width: auto;
-display: block;
-padding: 0;
-position: relative;
-width: 100%;
-z-index: 1;
- }
+        padding: 0;
+  width: auto;
+  display: block;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  padding: 30px 40px !important;
+  text-align: center;
+   }
 
  .last_nav {
   max-width: unset;
@@ -216,10 +218,6 @@ display: flex;
 .quick_info {
     width: 60%;
     margin-bottom: 3em;
-}
-
-.navbar__menu--uprava .fas {
-    right: -15px;
 }
 }
 

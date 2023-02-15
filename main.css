@@ -7,7 +7,7 @@ body {
     width: 100%;
     background: black;
     background: #C33764;  /* fallback colour. Make sure this is just one solid colour. */
-    background: -webkit-linear-gradient(rgba(59, 60, 63, 0.8), rgba(43, 39, 40, 0.8)), url(./Advanced-carpentry-and-joinery.jpg);
+    background: -webkit-linear-gradient(rgba(59, 60, 63, 0.8), rgba(43, 39, 40, 0.8)), url(./img/Advanced-carpentry-and-joinery.jpg);
     color: white;
         display: flex;
     justify-content: center;
@@ -80,6 +80,7 @@ transition: all .2s cubic-bezier(.645,.045,.355,1);
 
 .navbar {
     flex-grow: 1;
+
 }
 
 .navbar__menu {
@@ -101,13 +102,20 @@ padding: 0;
 .navbar__menu > li a {
     align-items: center;
     display: flex;
-    flex: 1 1 0;
+    flex-grow: 1;
     text-align: center;
     margin: 0;
 padding: 0;
 text-decoration: none;
 text-transform: uppercase;
 color: rgb(0, 0, 0);
+justify-content: center;
+padding: 42px 10px;
+}
+
+.navbar__menu > li:hover > a {
+    color: #EB3138;
+    cursor: pointer;
 }
 
 .navbar__menu--uprava {
@@ -124,6 +132,11 @@ letter-spacing: 3px;
 text-underline-position: under;
 word-wrap: break-word;
 font-size: 18px;
+}
+
+.last_nav a {
+    padding: 0 !important
+    ;
 }
 
 i {
@@ -155,7 +168,7 @@ i {
   }
 
   .banner {
-    background: -webkit-linear-gradient(rgba(45, 43, 43, 0.75), rgba(45, 43, 43, 0.75)), url(./cesta-lesem-jested.jpg);
+    background: -webkit-linear-gradient(rgba(45, 43, 43, 0.75), rgba(45, 43, 43, 0.75)), url(./img/cesta-lesem-jested.jpg);
     background-size: cover;
     height: 750px;
     display: flex;
@@ -316,7 +329,7 @@ text-transform: uppercase;
 
 .postup_realizace__nadpis{
   width: 60vw;
-    background: -webkit-linear-gradient(rgba(45, 43, 43, 0.75), rgba(45, 43, 43, 0.75)), url(./image-proxy.jpg);
+    background: -webkit-linear-gradient(rgba(45, 43, 43, 0.75), rgba(45, 43, 43, 0.75)), url(./img/image-proxy.jpg);
     background-size: cover;
     height: auto;
     color: white;
@@ -504,7 +517,7 @@ margin-top: 40px;
   }
 
   .thumbnail {
-    background-image: url(./Advanced-carpentry-and-joinery.jpg);
+    background-image: url(./img/Advanced-carpentry-and-joinery.jpg);
     background-position: 50%;
     background-size: cover;
     display: block;
@@ -660,7 +673,7 @@ footer address > a {
 }
 
 footer {
-    background-image: url(./house-search-svgrepo-com.png);
+    background-image: url(./img/house-search-svgrepo-com.png);
     background-position: 75% 25%;
     background-repeat: no-repeat;
     background-size: 30em;
@@ -675,3 +688,26 @@ footer {
     display: none;
 }
 
+.galerie__foto__samotne:nth-child(1) .thumbnail {
+    background-image: url(./img/rekonstrukce_kucyhne.jpg);
+  }
+
+  .galerie__foto__samotne:nth-child(2) .thumbnail {
+    background-image: url(./img/koupelna.jpg);
+  }
+
+  .galerie__foto__samotne:nth-child(3) .thumbnail {
+    background-image: url(./img/krb.jpg);
+  }
+
+  .galerie__foto__samotne:nth-child(4) .thumbnail {
+    background-image: url(./img/koupelna2.jpg);
+  }
+
+  .galerie__foto__samotne:nth-child(5) .thumbnail {
+    background-image: url(./img/altan.jpg);
+  }
+
+  .galerie__foto__samotne:nth-child(6) .thumbnail {
+    background-image: url(./img/vana.jpg);
+  }
