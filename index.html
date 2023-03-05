@@ -31,8 +31,17 @@
 
     <nav class="navbar">
       <ul class="navbar__menu">
-          <li><a style="color: #EB3138;" href="./index.html">novinky</a></li>
-          <li><a href="./sluzby.html">služby</a></li>
+          <li><a class="novinky" href="./index.html">novinky</a></li>
+          <li><a href="./sluzby.html">služby</a>
+            <span class="drpdwn"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+            <ul class="dropdown">
+                <li><a href="#">Přehled</a></li>
+                <li><a href="#">Ukázky</a></li>
+                <li class="insta"><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+
+          </li>
+
           <li><a href="./okoli.html">okolí</a></li>
           <li><a href="./gallery.html">galerie</a></li>
           <li class="last_nav"><a href="./kontakt.html">
@@ -338,5 +347,18 @@ function myFunction() {
 
 <script src="./javascript/observer.js"></script> 
 <script src="./javascript/back_to_top.js"></script> 
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+  $('.drpdwn').click(function() {
+    $('.dropdown').toggleClass('active');
+  });
+});
+
+</script>
+
 </body>
 </html>
