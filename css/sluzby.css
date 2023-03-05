@@ -550,3 +550,15 @@ main {
     .dropdown li:hover a {
         color: #EB0808;
     }
+
+    .navbar__menu a.active--site {
+        color: #EB0808;
+    }
+
+    ul:hover a.active--site{
+        color: black !important;
+    }
+
+   li a.active--site:hover {
+        color: #EB0808 !important;
+    }
