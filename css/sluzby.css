@@ -7,7 +7,7 @@ body {
 }
 
 .image {
-    background-image: url(./img/stavebni-prace.jpg);
+    background-image: url(../img/stavebni-prace.jpg);
     background-position: 50%;
 background-size: cover;
 margin: 0 0 20px;
@@ -367,7 +367,7 @@ footer address > a {
 }
 
 footer {
-    background-image: url(./img/house-search-svgrepo-com.png);
+    background-image: url(../img/house-search-svgrepo-com.png);
     background-position: 75% 25%;
     background-repeat: no-repeat;
     background-size: 30em;
@@ -389,7 +389,7 @@ padding-top: 4em;
 }
 
 .header_image {
-    background: -webkit-linear-gradient(rgba(59, 60, 63, 0.7), rgba(43, 39, 40, 0.7)), url(./img/1.jpg);
+    background: -webkit-linear-gradient(rgba(59, 60, 63, 0.7), rgba(43, 39, 40, 0.7)), url(../img/1.jpg);
     width: 100%;
     height: 750px;
     background-position: 54% 46%;
@@ -562,3 +562,51 @@ main {
    li a.active--site:hover {
         color: #EB0808 !important;
     }
+
+    .hamburg .hamburger-lines {
+        display: block;
+        height: 26px;
+        width: 32px;
+        position: absolute;
+        top: 17px;
+        left: 0px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      
+      .hamburg .hamburger-lines .line {
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: #F1141D;
+      }
+      
+      .hamburg .hamburger-lines .line1 {
+        transform-origin: 0% 0%;
+        transition: transform 0.2s ease-in-out;
+      }
+      
+      .hamburg .hamburger-lines .line2 {
+        transition: transform 0.2s ease-in-out;
+      }
+      
+      .hamburg .hamburger-lines .line3 {
+        transform-origin: 0% 100%;
+        transition: transform 0.2s ease-in-out;
+      }
+      
+      
+      .hamburger-lines.opened .line1 {
+        transform: rotate(45deg);
+      }
+      
+      .hamburger-lines.opened .line2 {
+        transform: scaleY(0);
+      }
+      
+      .hamburger-lines.opened .line3 {
+        transform: rotate(-45deg);
+      }

@@ -195,6 +195,7 @@ padding-bottom: 1em;
   width: 100%;
   padding-bottom: 2em;
   z-index: 100;
+  transition: all .3s cubic-bezier(.645,.045,.355,1); 
  }
 
  .header_image h1 {

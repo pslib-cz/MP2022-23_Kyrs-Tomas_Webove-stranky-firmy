@@ -13,7 +13,7 @@ body {
     width: 100%;
     background: black;
     background: #C33764;  /* fallback colour. Make sure this is just one solid colour. */
-    background: -webkit-linear-gradient(rgba(59, 60, 63, 0.8), rgba(43, 39, 40, 0.8)), url(./img/Advanced-carpentry-and-joinery.jpg);
+    background: -webkit-linear-gradient(rgba(59, 60, 63, 0.8), rgba(43, 39, 40, 0.8)), url(../img/Advanced-carpentry-and-joinery.jpg);
     color: white;
         display: flex;
     justify-content: center;
@@ -174,7 +174,7 @@ i {
   }
 
   .banner {
-    background: -webkit-linear-gradient(rgba(45, 43, 43, 0.75), rgba(45, 43, 43, 0.75)), url(./img/cesta-lesem-jested.jpg);
+    background: -webkit-linear-gradient(rgba(45, 43, 43, 0.75), rgba(45, 43, 43, 0.75)), url(../img/cesta-lesem-jested.jpg);
     background-size: cover;
     height: 750px;
     display: flex;
@@ -335,7 +335,7 @@ text-transform: uppercase;
 
 .postup_realizace__nadpis{
   width: 60vw;
-    background: -webkit-linear-gradient(rgba(45, 43, 43, 0.75), rgba(45, 43, 43, 0.75)), url(./img/image-proxy.jpg);
+    background: -webkit-linear-gradient(rgba(45, 43, 43, 0.75), rgba(45, 43, 43, 0.75)), url(../img/image-proxy.jpg);
     background-size: cover;
     height: auto;
     color: white;
@@ -523,7 +523,7 @@ margin-top: 40px;
   }
 
   .thumbnail {
-    background-image: url(./img/Advanced-carpentry-and-joinery.jpg);
+    background-image: url(../img/Advanced-carpentry-and-joinery.jpg);
     background-position: 50%;
     background-size: cover;
     display: block;
@@ -679,7 +679,7 @@ footer address > a {
 }
 
 footer {
-    background-image: url(./img/house-search-svgrepo-com.png);
+    background-image: url(../img/house-search-svgrepo-com.png);
     background-position: 75% 25%;
     background-repeat: no-repeat;
     background-size: 30em;
@@ -695,27 +695,27 @@ footer {
 }
 
 .galerie__foto__samotne:nth-child(1) .thumbnail {
-    background-image: url(./img/rekonstrukce_kucyhne.jpg);
+    background-image: url(../img/rekonstrukce_kucyhne.jpg);
   }
 
   .galerie__foto__samotne:nth-child(2) .thumbnail {
-    background-image: url(./img/koupelna.jpg);
+    background-image: url(../img/koupelna.jpg);
   }
 
   .galerie__foto__samotne:nth-child(3) .thumbnail {
-    background-image: url(./img/krb.jpg);
+    background-image: url(../img/krb.jpg);
   }
 
   .galerie__foto__samotne:nth-child(4) .thumbnail {
-    background-image: url(./img/koupelna2.jpg);
+    background-image: url(../img/koupelna2.jpg);
   }
 
   .galerie__foto__samotne:nth-child(5) .thumbnail {
-    background-image: url(./img/altan.jpg);
+    background-image: url(../img/altan.jpg);
   }
 
   .galerie__foto__samotne:nth-child(6) .thumbnail {
-    background-image: url(./img/vana.jpg);
+    background-image: url(../img/vana.jpg);
   }
 
 
@@ -807,18 +807,66 @@ footer {
         opacity: .5;
     }
 
-  .navbar__menu a.novinky  {
+  .navbar__menu a.active--site  {
         color: #EB0808;
     }
 
-    ul:hover a.novinky{
+    ul:hover a.active--site{
         color: black !important;
     }
 
-   li a.novinky:hover {
+   li a.active--site:hover {
         color: #EB0808 !important;
     }
 
     .dropdown li:hover a {
         color: #EB0808;
     }
+
+    .hamburg .hamburger-lines {
+        display: block;
+        height: 26px;
+        width: 32px;
+        position: absolute;
+        top: 17px;
+        left: 0px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      
+      .hamburg .hamburger-lines .line {
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: #F1141D;
+      }
+      
+      .hamburg .hamburger-lines .line1 {
+        transform-origin: 0% 0%;
+        transition: transform 0.2s ease-in-out;
+      }
+      
+      .hamburg .hamburger-lines .line2 {
+        transition: transform 0.2s ease-in-out;
+      }
+      
+      .hamburg .hamburger-lines .line3 {
+        transform-origin: 0% 100%;
+        transition: transform 0.2s ease-in-out;
+      }
+      
+      
+      .hamburger-lines.opened .line1 {
+        transform: rotate(45deg);
+      }
+      
+      .hamburger-lines.opened .line2 {
+        transform: scaleY(0);
+      }
+      
+      .hamburger-lines.opened .line3 {
+        transform: rotate(-45deg);
+      }

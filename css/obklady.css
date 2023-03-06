@@ -97,7 +97,7 @@ width: 8px;
 
 
 .banner {
-    background-image: url(./img/banner.jpg);
+    background-image: url(../img/banner.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-size: cover;
@@ -182,7 +182,7 @@ width: 8px;
 
 .postup_realizace__nadpis{
   width: 60vw;
-    background: -webkit-linear-gradient(rgba(45, 43, 43, 0.75), rgba(45, 43, 43, 0.75)), url(./img/obklady_prace.jpg);
+    background: -webkit-linear-gradient(rgba(45, 43, 43, 0.75), rgba(45, 43, 43, 0.75)), url(../img/obklady_prace.jpg);
     background-size: cover;
     height: auto;
     color: white;
@@ -297,27 +297,27 @@ text-transform: uppercase;
   }
 
   .galerie__foto__samotne:nth-child(1) .thumbnail {
-    background-image: url(./img/rekonstrukce_kucyhne.jpg);
+    background-image: url(../img/rekonstrukce_kucyhne.jpg);
   }
 
   .galerie__foto__samotne:nth-child(2) .thumbnail {
-    background-image: url(./img/koupelna.jpg);
+    background-image: url(../img/koupelna.jpg);
   }
 
   .galerie__foto__samotne:nth-child(3) .thumbnail {
-    background-image: url(./img/krb.jpg);
+    background-image: url(../img/krb.jpg);
   }
 
   .galerie__foto__samotne:nth-child(4) .thumbnail {
-    background-image: url(./img/koupelna2.jpg);
+    background-image: url(../img/koupelna2.jpg);
   }
 
   .galerie__foto__samotne:nth-child(5) .thumbnail {
-    background-image: url(./img/altan.jpg);
+    background-image: url(../img/altan.jpg);
   }
 
   .galerie__foto__samotne:nth-child(6) .thumbnail {
-    background-image: url(./img/vana.jpg);
+    background-image: url(../img/vana.jpg);
   }
 
 
@@ -546,7 +546,7 @@ p.nomargin {
 
 .uvod_foto {
     text-align: center;
-        background: -webkit-linear-gradient(rgba(45, 43, 43, 0.35), rgba(45, 43, 43, 0.35)), url(./img/uvdoni_foto.jpg);
+        background: -webkit-linear-gradient(rgba(45, 43, 43, 0.35), rgba(45, 43, 43, 0.35)), url(../img/uvdoni_foto.jpg);
         background-size: cover;
         height: 600px;
         display: flex;
@@ -779,3 +779,52 @@ i {
     .dropdown li:hover a {
         color: #EB0808;
     }
+
+    
+    .hamburg .hamburger-lines {
+        display: block;
+        height: 26px;
+        width: 32px;
+        position: absolute;
+        top: 17px;
+        left: 0px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      
+      .hamburg .hamburger-lines .line {
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: #F1141D;
+      }
+      
+      .hamburg .hamburger-lines .line1 {
+        transform-origin: 0% 0%;
+        transition: transform 0.2s ease-in-out;
+      }
+      
+      .hamburg .hamburger-lines .line2 {
+        transition: transform 0.2s ease-in-out;
+      }
+      
+      .hamburg .hamburger-lines .line3 {
+        transform-origin: 0% 100%;
+        transition: transform 0.2s ease-in-out;
+      }
+      
+      
+      .hamburger-lines.opened .line1 {
+        transform: rotate(45deg);
+      }
+      
+      .hamburger-lines.opened .line2 {
+        transform: scaleY(0);
+      }
+      
+      .hamburger-lines.opened .line3 {
+        transform: rotate(-45deg);
+      }

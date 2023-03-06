@@ -16,15 +16,20 @@
         <a class="logo" href="#">
           <img src="./balkon.jpg" alt="#">
       </a>
-      <a href="javascript:void(0);" class="icon" onclick="mojeFunction()">
-        <i class="fa fa-bars"></i>
+      <a href="javascript:void(0);" class="icon hamburg" onclick="mojeFunction()">
+        <!-- <i class="fa fa-bars"></i> -->
+        <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+            </div>
     </a>
 </div>
 <section class="header">
         <div class="header__firma">    
             <h1>FIRMA DROBNOSTAV</h1>
             <p class="header--middle">PRÁCE MENŠÍHO ROZSAHU</p>
-            <p>ZEDNICKÉ / TRUHLÁŘSKÉ / OBKLADOVÉ PRÁCE</p>
+            <p class="header--bottom">ZEDNICKÉ / TRUHLÁŘSKÉ / OBKLADOVÉ PRÁCE</p>
         </div>
     </section>
   <header id="navbar">
@@ -33,14 +38,14 @@
       <ul class="navbar__menu">
           <li><a class="active--site" href="./index.html">novinky</a></li>
           <li><a href="./sluzby.html">služby</a>
-            <span class="drpdwn"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
-            <ul class="dropdown">
-                <li><a href="#">Přehled</a></li>
-                <li><a href="#">Ukázky</a></li>
-                <li class="insta"><a href="#"><i class="fa fa-instagram"></i></a></li>
-            </ul>
-
-          </li>
+              <span class="drpdwn"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+              <ul class="dropdown">
+                  <li><a href="#">Dropdown 1</a></li>
+                  <li><a href="#">Dropdown 2</a></li>
+                  <li class="insta"><a href="#"><i class="fa fa-instagram"></i></a></li>
+              </ul>
+  
+            </li>
 
           <li><a href="./okoli.html">okolí</a></li>
           <li><a href="./gallery.html">galerie</a></li>
@@ -53,7 +58,9 @@
 </nav>
   </header>
 
-
+<div class="white-stripe">
+  <p>ZEDNICKÉ / TRUHLÁŘSKÉ / OBKLADOVÉ PRÁCE</p>
+</div>
   <main>
 <section class="banner">
     <div class="banner__upravy">
@@ -357,6 +364,23 @@ $(document).ready(function() {
     $('.dropdown').toggleClass('active');
   });
 });
+
+$(document).ready(function() {
+  $('.hamburg').click(function() {
+    $('.hamburger-lines').toggleClass('opened');
+  });
+});
+
+
+$('.icon.hamburg').click(function() {
+  $(this).toggleClass('open');
+  if ($(this).hasClass('open')) {
+    $(this).find('i.fa').removeClass('fa-bars').addClass('fa-close');
+  } else {
+    $(this).find('i.fa').removeClass('fa-close').addClass('fa-bars');
+  }
+});
+
 
 </script>
 
