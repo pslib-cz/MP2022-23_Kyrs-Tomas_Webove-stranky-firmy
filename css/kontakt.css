@@ -351,6 +351,7 @@ i {
     margin-right: 40px;
     margin-left: 20px;
     justify-content: left;
+    text-transform: capitalize;
     } 
 
     .navbar__menu > li ul.dropdown li.insta

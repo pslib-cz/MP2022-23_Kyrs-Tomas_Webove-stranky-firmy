@@ -503,7 +503,12 @@ main {
     margin-right: 40px;
     margin-left: 20px;
     justify-content: left;
+    text-transform: capitalize;
     } 
+
+    #ukazky {
+        padding-top: 4em;
+    }
 
     .navbar__menu > li ul.dropdown li.insta
     {

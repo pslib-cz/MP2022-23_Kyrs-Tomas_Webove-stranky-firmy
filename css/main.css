@@ -739,7 +739,6 @@ footer {
     transition-property: all;
     transition-duration: 0.3s;
     box-sizing: border-box;
-
     }
     
     .navbar__menu li ul.dropdown li{
@@ -767,6 +766,7 @@ footer {
     margin-right: 40px;
     margin-left: 20px;
     justify-content: left;
+    text-transform: capitalize;
     } 
 
     .navbar__menu > li ul.dropdown li.insta
@@ -870,3 +870,8 @@ footer {
       .hamburger-lines.opened .line3 {
         transform: rotate(-45deg);
       }
+
+      .header__firma {
+        text-transform: uppercase;
+      }
+
