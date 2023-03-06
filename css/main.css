@@ -875,3 +875,9 @@ footer {
         text-transform: uppercase;
       }
 
+main {
+    background: url(../img/360_F_320596186_eFYMjkK769jB7qXTXF6aP9lXNftz0VCU.png);
+  background-size: auto;
+background-size: 11px 11px;
+overflow: hidden;
+}
