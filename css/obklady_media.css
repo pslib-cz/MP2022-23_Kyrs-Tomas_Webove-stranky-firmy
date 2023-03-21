@@ -11,6 +11,15 @@ and (max-width: 999px) {
       background: #f5f9fb;
   }
 
+  .logo--desktop {
+    display: none;
+  }
+
+  .logo--foto {
+    padding-left: 2.05em;
+    padding-top: 12px;
+}
+
   .navbar__menu li ul.dropdown li {
           display: block;
           min-width: auto;
@@ -389,9 +398,23 @@ display: flex;
 
   }
 
-  .hamburger_on main, .hamburger_on .uvod_foto { 
-    opacity: .4;
-   }
+  .hamburger_on 
+  {margin: 0; 
+      height: 100%; 
+      overflow: hidden}
+  
+     .hamburger_on main::after 
+     {
+      background: #000;
+      content: "";
+      height: 30000px;
+      left: 0;
+      opacity: .6;
+      pointer-events: none;
+      position: absolute;
+      top: 0;
+      width: 100%;
+     }
 
   .navbar__menu > li a {
 flex-grow: 1;
@@ -431,35 +454,48 @@ background-color: #F4F9FB;
 }
 
 .header__hamburger {
-display: flex;
-flex-direction: row;
-background-color: white;
-position: fixed;
-top: 0;
-width: 100%;
-padding-bottom: 2.25em;
-z-index: 100;
-transition: all .3s cubic-bezier(.645,.045,.355,1); 
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-bottom: .5em;
+  z-index: 100;
+  transition: all .3s cubic-bezier(.645,.045,.355,1); 
+ }
+
+ footer .naceneni_tlacitko {
+  margin: 0 auto;
+  display: block;
+  padding: .75em 3.5em .75em 3.5em;
+  max-width: 56%;
+  text-align: center;
+  margin-bottom: 2em;
 }
 
-#navbar{
-opacity: 0;
-z-index: 101;
-transition: all .3s cubic-bezier(.645,.045,.355,1);
+footer .omezeni_sirky {
+  flex-direction: column;
 }
 
-.hamburger_on .header__hamburger {
-padding-bottom: 7em;
-transition: all .3s cubic-bezier(.645,.045,.355,1);
-}
+ .header_image h1 {
+    font-size: 2rem;
+ }
 
-.hamburger_on #navbar {
-opacity: 1;
-}
+ .navbar{
+  opacity: 0;
+  z-index: 101;
+  transition: all .3s cubic-bezier(.645,.045,.355,1);
+ }
 
-.hamburger_on main, .hamburger_on .header { 
-opacity: .4;
-}
+ .hamburger_on .header__hamburger {
+  padding-bottom: 4em;
+  transition: all .3s cubic-bezier(.645,.045,.355,1);
+ }
+
+ .hamburger_on .navbar {
+  opacity: 1;
+ }
 
 .hamburger_on .navbar {
 transform: translateY(-60px);
@@ -609,4 +645,8 @@ transition-property: all;
 -webkit-transition-duration: 0.3s;
 transition-duration: 0.3s; 
 }  
+
+.logo--mobile {
+  display: none;
+}
 }

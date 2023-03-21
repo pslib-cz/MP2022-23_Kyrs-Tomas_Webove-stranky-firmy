@@ -13,6 +13,21 @@ body {
     max-width: 6em;
 }
 
+.logo--foto {
+    display: inline-block;
+        height: 50px;
+        max-width: 100%;
+        margin: 0;
+padding: 0;
+border: 0;
+
+box-sizing: border-box;
+}
+
+.logo {
+    padding: 0 40px 0 0;
+}
+
 .naceneni_tlacitko--black {
     background-color: transparent;
     border: 5px solid black;
@@ -291,6 +306,8 @@ i {
     right: 0;
     background-color: white;
     z-index: 100;
+    display: flex;
+    align-items: center;
 }
 
 .icon {

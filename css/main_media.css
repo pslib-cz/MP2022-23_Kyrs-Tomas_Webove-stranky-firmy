@@ -16,6 +16,20 @@ and (max-width: 999px) {
         background: #f5f9fb;
     }
 
+    .zkusenosti {
+      margin-bottom: 8em;
+    }
+
+    .logo--desktop {
+      display: none !important;
+    }
+  
+    .logo--foto {
+      padding-left: 2.05em;
+      padding-top: 12px;
+  }
+  
+
     .navbar__menu li ul.dropdown li {
             display: block;
             min-width: auto;
@@ -292,6 +306,7 @@ font-size: 30px;
 
   .white-stripe {
     text-align: center;
+    text-transform: uppercase;
   }
 
   .header--bottom  {
@@ -380,23 +395,27 @@ padding-bottom: 1em;
   position: fixed;
   top: 0;
   width: 100%;
-  padding-bottom: 3.5em;
+  padding-bottom: .5em;
   z-index: 100;
   transition: all .3s cubic-bezier(.645,.045,.355,1); 
  }
 
- #navbar{
+ .header_image h1 {
+    font-size: 2rem;
+ }
+
+ .navbar{
   opacity: 0;
   z-index: 101;
   transition: all .3s cubic-bezier(.645,.045,.355,1);
  }
 
  .hamburger_on .header__hamburger {
-  padding-bottom: 7em;
+  padding-bottom: 4em;
   transition: all .3s cubic-bezier(.645,.045,.355,1);
  }
 
- .hamburger_on #navbar {
+ .hamburger_on .navbar {
   opacity: 1;
  }
 
@@ -423,7 +442,7 @@ padding-bottom: 1em;
   transition: all .25s cubic-bezier(.645,.045,.355,1);
  }
 
- body header {
+body header {
   padding: 0 0 0 4%;
   position: fixed;
   top: 0;
@@ -431,7 +450,22 @@ padding-bottom: 1em;
   right: 0;
   background-color: white;
   z-index: 100;
+  display: flex;
+  align-items: center;
 }
+
+.logo--foto {
+  display: inline-block;
+      height: 50px;
+      max-width: 100%;
+box-sizing: border-box;
+}
+
+.logo {
+  padding: 0 40px 0 0;
+}
+
+
 
  .header__firma {
   margin-top: 4em;
@@ -488,4 +522,4 @@ max-width: 56%;
       display: none;
       text-transform: uppercase;
     }
-    }
+  }
