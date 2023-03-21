@@ -1,7 +1,7 @@
 # Typography CSS library
 **Author:** *Tomáš Kyrš*
 ## Demo site
-Link to **[demo](https://htmlpreview.github.io/?https://github.com/pslib-cz/MP2022-23_Kyrs-Tomas_Webove-stranky-firmy/blob/master/index.html)** site for preview.
+Link to **[demo]([https://htmlpreview.github.io/?https://github.com/pslib-cz/MP2022-23_Kyrs-Tomas_Webove-stranky-firmy/blob/master/index.html](https://drobnostav.online/))** site for preview.
 ## Implementation
 
 Add file inside your project folder
