@@ -312,7 +312,7 @@ display: block;
 }
 
 .content__container p:first-of-type {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 36px;
     margin: 0 0 30px;
   }
@@ -320,7 +320,7 @@ display: block;
   .inline_button {
     color: #ff422a;
 display: inline-block;
-font-size: 16px;
+font-size: 14px;
 font-weight: 400;
 letter-spacing: 3px;
 line-height: 24px;
@@ -431,7 +431,9 @@ margin-top: .5em;
 }
 
 .vyhody__uprava p:last-of-type {
-    max-width: 80%;
+    max-width: 70%;
+    padding-left: 2em;
+    padding-right: 2em;
     text-align: center;
     margin: 0 auto;
     padding-bottom: 2em;

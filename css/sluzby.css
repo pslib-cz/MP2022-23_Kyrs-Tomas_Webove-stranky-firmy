@@ -165,6 +165,11 @@ i.fas--cervena::before {
 .ukazky_praci--image::after {
     content: none;
 }
+
+.ukazky_praci--image:hover {
+    transform: scale(1.015);
+    transition: all .27s;
+}
  
 .ukazy_praci--karta::before {
     content: none;
