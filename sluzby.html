@@ -108,7 +108,7 @@
                 </a>
                 <div class="side_view">
                   <img src="./img/podlaha_stavebni-prace.jpg" alt="#" onclick="change(this.src);revertBack();">
-                  <img src="./img/strop_drevo.jpg" alt="#" onclick="change(this.src);goNext();">
+                  <img src="./img/podlaha_done.jpg" alt="#" onclick="change(this.src);goNext();">
               </div>
                       <h3>Kompletní změna dispozice koupelny – RD Liberec Rochlice</h3>
       <p>Jedná se o aktuální zakázku, která je momentálně ve stadiu rozpracovanosti.
@@ -147,23 +147,30 @@
         <h2 class="ukazky_praci--nadpis">Ukázka realizací - Práce se dřevem</h2>
         <div class="srovnano-1-3 aos-init aos-animate" data-aos="fade-up" data-aos-duration="500">
           <div class="quick_nav__karta ukazy_praci--karta">
-            <a href="./img/altan_drevo-prace.png">
-              <img src="./img/altan_drevo-prace.png" alt="#">
+            <a id ="photo_previews2" href="./img/altan.jpg">
+              <img id="ukazky__img2" src="./img/altan.jpg" alt="#">
               </a>
-              <div class="side_view side_view--nophoto">
-                <img src="./img/altan_drevo-prace.png" alt="#">
+              <div class="side_view">
+                <img src="./img/altan.jpg" alt="#" onclick="change2(this.src);revertBack2();">
+                <img src="./img/altan_done.jpg" alt="#" onclick="change2(this.src);goNext2();">
+                <img src="./img/altan_inside.jpg" alt="#" onclick="change2(this.src);goNext2_3();">
             </div>
+
+
+
+
+
                   <h3>Tesařské práce – Zahradní altán u RD v Liberci</h3>
 <p>Zde majitelé chtěli využít místo po starém již nefunkčním skleníku a vytvořit zde krytý a uzavíratelný altánek. Naše práce spočívala nejdříve ve vytvoření dřevěné kostry a překladů z lepených trámů. Poté jsme dle návrhu majitele vyrobily pojízdné dřevěné dvoukřídlé dveře a boční dřevěné rámy pro vsazení oken.</p>        
 </div>
       </div>
       <div class="srovnano-1-3 aos-init aos-animate" data-aos="fade-up" data-aos-duration="500">
         <div class="quick_nav__karta ukazy_praci--karta">
-          <a href="./img/altan-kuchyne_drevo.jpg">
-            <img src="./img/altan-kuchyne_drevo.jpg" alt="#">
+          <a href="./img/rekonstrukce_kucyhne.jpg">
+            <img src="./img/rekonstrukce_kucyhne.jpg" alt="#">
             </a>
             <div class="side_view side_view--nophoto">
-              <img src="./img/altan-kuchyne_drevo.jpg" alt="#">
+              <img src="./img/rekonstrukce_kucyhne.jpg" alt="#">
           </div>
                 <h3>Výroba korpusu kuchyňské linky do zahradního altánu</h3>
                 <p>Kuchyňská linka byla na míru a na přání ze zbytků materiálů, které měl majitel k dispozici– lamino, spárovka a kuchyňská deska.</p>        
@@ -300,6 +307,8 @@
     
     
     </script>
+
+</script>
     <script>const change = src => {
       document.getElementById('ukazky__img').src = src
     }
@@ -307,14 +316,33 @@
 
 <script type="text/javascript">
 function goNext() {
-    document.getElementById("photo_previews1").href="./img/strop_drevo.jpg"; 
+    document.getElementById("photo_previews1").href="./img/podlaha_done.jpg"; 
   }
 </script>
+
+
 <script>
 function revertBack() {
   document.getElementById("photo_previews1").href="./img/podlaha_stavebni-prace.jpg"; 
 }
 </script>
+
+<script>const change2 = src => {
+  document.getElementById('ukazky__img2').src = src
+}
+</script>
+
+<script>
+  function goNext2() {
+document.getElementById("photo_previews2").href="./img/altan_done.jpg";
+}
+function goNext2_3() {
+document.getElementById("photo_previews2").href="./img/altan_inside.jpg";
+}
+  function revertBack2() {
+    document.getElementById("photo_previews2").href="./img/altan.jpg"; 
+  }
+  </script>
     
 </body>
 </html>

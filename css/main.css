@@ -704,7 +704,7 @@ footer {
 }
 
 .galerie__foto__samotne:nth-child(1) .thumbnail {
-    background-image: url(../img/rekonstrukce_kucyhne.jpg);
+    background-image: url(../img/altan-kuchyne_drevo.jpg);
   }
 
   .galerie__foto__samotne:nth-child(2) .thumbnail {
@@ -720,7 +720,7 @@ footer {
   }
 
   .galerie__foto__samotne:nth-child(5) .thumbnail {
-    background-image: url(../img/altan.jpg);
+    background-image: url(../img/altan_drevo-prace.png);
   }
 
   .galerie__foto__samotne:nth-child(6) .thumbnail {
