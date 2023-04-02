@@ -17,6 +17,11 @@ and (max-width: 999px) {
           background: #f5f9fb;
       }
 
+      .ukazy_praci--karta img {
+        width: 100%;
+        height: 100%;
+      }
+
       .logo--desktop {
         display: none;
       }
