@@ -929,3 +929,21 @@ box-sizing: border-box;
     padding-bottom: 4em;
     padding-top: 4em;
     }
+
+    
+    .drpdwn
+    {
+      padding-left: 2em;
+    text-align: center;
+    display: inline-block;
+    line-height: 16px;
+    font-size: 20px;
+    }
+
+    .drpdwn i
+    {
+         right: auto;
+        top: auto;
+        transform: none;
+        position: relative;   
+    }

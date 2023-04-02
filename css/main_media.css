@@ -2,6 +2,10 @@
 and (min-width: 0px)
 and (max-width: 999px) {
 
+.mouse {
+  display: none;
+}
+
     .header {
         height: auto;
     }

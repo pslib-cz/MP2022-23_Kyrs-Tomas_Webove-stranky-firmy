@@ -28,10 +28,9 @@
     </a>
   </div>
         <nav class="navbar">
-             <ul class="navbar__menu">
+             <menu class="navbar__menu">
                  <li><a href="./index.html">novinky</a></li>
-                 <li><a href="./sluzby.html">služby</a>
-                    <span class="drpdwn"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                 <li><a class="active--site" href="./sluzby.html">služby    <span class="drpdwn"><i class="fa fa-angle-down"></i></span></a>
                     <ul class="dropdown">
                        <li><a href="./sluzby.html#prehled">přehled</a></li>
                        <li><a href="./sluzby.html#ukazky">ukázky</a></li>
@@ -40,13 +39,13 @@
     
                   </li>
                  <li><a href="./okoli.html">okolí</a></li>
-                 <li><a href="./gallery.html">galerie</a></li>
+                 <li><a href="./galerie.html">galerie</a></li>
                  <li class="last_nav"><a href="./kontakt.html">
                      <span class="navbar__menu--uprava">Kontakt začněte zde
                          <i class="fas"></i>
                      </span>
                  </a></li>
-             </ul>
+             </menu>
      </nav>
 </header>
 
@@ -104,8 +103,13 @@
             <h2 class="ukazky_praci--nadpis">Ukázka realizací - Stavební práce</h2>
             <div class="srovnano-1-3 aos-init aos-animate" data-aos="fade-up" data-aos-duration="500">
               <div class="quick_nav__karta ukazy_praci--karta">
-                <a href="./img/podlaha_stavebni-prace.jpg" class="image ukazky_praci--image" style="background-image: url(./img/podlaha_stavebni-prace.jpg);">
+                <a id ="photo_previews1" href="./img/podlaha_stavebni-prace.jpg">
+                <img id="ukazky__img" src="./img/podlaha_stavebni-prace.jpg">
                 </a>
+                <div class="side_view">
+                  <img src="./img/podlaha_stavebni-prace.jpg" onclick="change(this.src);revertBack();">
+                  <img src="./img/strop_drevo.jpg" onclick="change(this.src);goNext();">
+              </div>
                       <h3>Kompletní změna dispozice koupelny – RD Liberec Rochlice</h3>
       <p>Jedná se o aktuální zakázku, která je momentálně ve stadiu rozpracovanosti.
       Přestavba koupelny a WC je zde opravdu razantní a bylo nutné zbourat
@@ -114,16 +118,24 @@
           </div>
           <div class="srovnano-1-3 aos-init aos-animate" data-aos="fade-up" data-aos-duration="500">
             <div class="quick_nav__karta ukazy_praci--karta">
-                <a href="./img/podlaha_stavebni-prace.jpg" class="image ukazky_praci--image" style="background-image: url(./img/Image\ 100.jpg);">
-                    </a>
+              <a href="./img/Image\ 100.jpg">
+                <img src="./img/1.jpg">
+                </a>
+                <div class="side_view side_view--nophoto">
+                  <img src="./img/podlaha_stavebni-prace.jpg">
+              </div>
                     <h3>Vyzdění bočních stěn u zahradního přístřešku a příprava zděného korpusu pro venkovní kuchyňskou linku.</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae minima nemo non commodi eveniet minus debitis eius voluptas, praesentium eum, itaque id totam omnis illum a ratione ducimus saepe nulla?</p>        
                 </div>
         </div>  
         <div class="srovnano-1-3 aos-init aos-animate" data-aos="fade-up" data-aos-duration="500">
           <div class="quick_nav__karta ukazy_praci--karta">
-            <a href="./img/plot_stavebni-prace.jpg" class="image ukazky_praci--image" style="background-image: url(./img/plot_stavebni-prace.jpg);">
-            </a>
+            <a href="./img/plot_stavebni-prace.jpg">
+              <img src="./img/plot_stavebni-prace.jpg">
+              </a>
+              <div class="side_view side_view--nophoto">
+                <img src="./img/plot_stavebni-prace.jpg">
+            </div>
                   <h3>Podezdívka plotu z KB bloků RD Liberec Vratislavice nad NIsou</h3>
                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae minima nemo non commodi eveniet minus debitis eius voluptas, praesentium eum, itaque id totam omnis illum a ratione ducimus saepe nulla?</p>        
                 </div>
@@ -135,24 +147,36 @@
         <h2 class="ukazky_praci--nadpis">Ukázka realizací - Práce se dřevem</h2>
         <div class="srovnano-1-3 aos-init aos-animate" data-aos="fade-up" data-aos-duration="500">
           <div class="quick_nav__karta ukazy_praci--karta">
-            <a href="./img/altan_drevo-prace.png" class="image ukazky_praci--image" style="background-image: url(./img/altan_drevo-prace.png);">
-            </a>
+            <a href="./img/altan_drevo-prace.png">
+              <img src="./img/altan_drevo-prace.png">
+              </a>
+              <div class="side_view side_view--nophoto">
+                <img src="./img/altan_drevo-prace.png">
+            </div>
                   <h3>Tesařské práce – Zahradní altán u RD v Liberci</h3>
 <p>Zde majitelé chtěli využít místo po starém již nefunkčním skleníku a vytvořit zde krytý a uzavíratelný altánek. Naše práce spočívala nejdříve ve vytvoření dřevěné kostry a překladů z lepených trámů. Poté jsme dle návrhu majitele vyrobily pojízdné dřevěné dvoukřídlé dveře a boční dřevěné rámy pro vsazení oken.</p>        
 </div>
       </div>
       <div class="srovnano-1-3 aos-init aos-animate" data-aos="fade-up" data-aos-duration="500">
         <div class="quick_nav__karta ukazy_praci--karta">
-          <a href="./img/altan-kuchyne_drevo.jpg" class="image ukazky_praci--image" style="background-image: url(./img/altan-kuchyne_drevo.jpg);">
-          </a>
+          <a href="./img/altan-kuchyne_drevo.jpg">
+            <img src="./img/altan-kuchyne_drevo.jpg">
+            </a>
+            <div class="side_view side_view--nophoto">
+              <img src="./img/altan-kuchyne_drevo.jpg">
+          </div>
                 <h3>Výroba korpusu kuchyňské linky do zahradního altánu</h3>
                 <p>Kuchyňská linka byla na míru a na přání ze zbytků materiálů, které měl majitel k dispozici– lamino, spárovka a kuchyňská deska.</p>        
             </div>
     </div>  
     <div class="srovnano-1-3 aos-init aos-animate" data-aos="fade-up" data-aos-duration="500">
       <div class="quick_nav__karta ukazy_praci--karta">
-        <a href="./img/strop_drevo.jpg" class="image ukazky_praci--image" style="background-image: url(./img/strop_drevo.jpg);">
-        </a>
+        <a href="./img/strop_drevo.jpg">
+          <img src="./img/strop_drevo.jpg">
+          </a>
+          <div class="side_view side_view--nophoto">
+            <img src="./img/strop_drevo.jpg">
+        </div>
               <h3>Kazetový strop do obývacího pokoje – RD Liberec Vesec</h3>
               <p>Strop je vyroben z borovicových úzkých palubek, ozdoben lištami a čtvercovým středem. Je umístěn na dřevěném roštu, povrchová úprava lesklý lak. Je ozdobou pokoje a je věčný. </p>        
             </div>
@@ -164,24 +188,36 @@
           <h2 class="ukazky_praci--nadpis">Ukázka realizací - Obklady kamenem a plovoucí podlahy</h2>
           <div class="srovnano-1-3 aos-init aos-animate" data-aos="fade-up" data-aos-duration="500">
             <div class="quick_nav__karta ukazy_praci--karta">
-              <a href="./img//dlazba_obklady.png" class="image ukazky_praci--image" style="background-image: url(./img//dlazba_obklady.png);">
-              </a>
+              <a href="./img//dlazba_obklady.png">
+                <img src="./img//dlazba_obklady.png">
+                </a>
+                <div class="side_view side_view--nophoto">
+                  <img src="./img//dlazba_obklady.png">
+              </div>
                     <h3>Venkovní dlažba na zahradní terase</h3>
   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae minima nemo non commodi eveniet minus debitis eius voluptas, praesentium eum, itaque id totam omnis illum a ratione ducimus saepe nulla?</p>        
   </div>
         </div>
         <div class="srovnano-1-3 aos-init aos-animate" data-aos="fade-up" data-aos-duration="500">
           <div class="quick_nav__karta ukazy_praci--karta">
-            <a href="./img/podlaha_stavebni-prace.jpg" class="image ukazky_praci--image" style="background-image: url(./img/Image\ 100.jpg);">
-            </a>
+            <a href="./img/podlaha_stavebni-prace.jpg">
+              <img src="./img/podlaha_stavebni-prace.jpg">
+              </a>
+              <div class="side_view side_view--nophoto">
+                <img src="./img/podlaha_stavebni-prace.jpg">
+            </div>
                   <h3>Obklad krbové vložky pískovcovou stavebnicí – RD Liberec Vesec</h3>
                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae minima nemo non commodi eveniet minus debitis eius voluptas, praesentium eum, itaque id totam omnis illum a ratione ducimus saepe nulla?</p>        
               </div>
       </div>  
       <div class="srovnano-1-3 aos-init aos-animate" data-aos="fade-up" data-aos-duration="500">
         <div class="quick_nav__karta ukazy_praci--karta">
-          <a href="./img/podlaha_stavebni-prace.jpg" class="image ukazky_praci--image" style="background-image: url(./img/Image\ 100.jpg);">
-          </a>
+          <a href="./img/podlaha_stavebni-prace.jpg">
+            <img src="./img/podlaha_stavebni-prace.jpg">
+            </a>
+            <div class="side_view side_view--nophoto">
+              <img src="./img/podlaha_stavebni-prace.jpg">
+          </div>
                 <h3>Obložení koupelny v panelovém domě, Liberec Doubí</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae minima nemo non commodi eveniet minus debitis eius voluptas, praesentium eum, itaque id totam omnis illum a ratione ducimus saepe nulla?</p>        
               </div>
@@ -193,7 +229,7 @@
    </main>
    <section class="projekt_zapati">
     <h2>Pojďme probrat i <span class="projekt_zapati--zvyrazneni">Váš</span> projekt.</h2>
-    <a class="naceneni_tlacitko naceneni_tlacitko--black" href="#">řekněte nám více
+    <a class="naceneni_tlacitko naceneni_tlacitko--black" href="./kontakt.html">řekněte nám více
       <i class="fas"></i>
     </a>
   </section>
@@ -265,5 +301,21 @@
     
     
     </script>
+    <script>const change = src => {
+      document.getElementById('ukazky__img').src = src
+    }
+    </script>
+
+<script type="text/javascript">
+function goNext() {
+    document.getElementById("photo_previews1").href="./img/strop_drevo.jpg"; 
+  }
+</script>
+<script>
+function revertBack() {
+  document.getElementById("photo_previews1").href="./img/podlaha_stavebni-prace.jpg"; 
+}
+</script>
+    
 </body>
 </html>

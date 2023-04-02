@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./css/galerie.css">
+    <link rel="icon" type="image/x-icon" href="./img/logoo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/galerie_media.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie | Drobnostav</title>
+</head>
+<body class="home">
+    <header id="navbar">
+      <div class="header__hamburger">
+        <a class="logo" href="./index.html">
+           <img class="logo--foto logo--mobile" src="./img/logoo.png" alt="#">
+           <img class="logo--foto logo--desktop" src="./img/logo_desktop.png" alt="#">
+      </a>
+      <a href="javascript:void(0);" class="icon hamburg" onclick="mojeFunction()">
+        <!-- <i class="fa fa-bars"></i> -->
+        <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+            </div>
+    </a>
+  </div>
+        <nav class="navbar">
+             <menu class="navbar__menu">
+                 <li><a href="./index.html">novinky</a></li>
+                 <li><a href="./sluzby.html">služby    <span class="drpdwn"><i class="fa fa-angle-down"></i></span></a>
+                    <ul class="dropdown">
+                       <li><a href="./sluzby.html#prehled">přehled</a></li>
+                       <li><a href="./sluzby.html#ukazky">ukázky</a></li>
+                        <li class="insta"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+    
+                  </li>
+                 <li><a href="./okoli.html">okolí</a></li>
+                 <li><a class="active--site" href="./galerie.html">galerie</a></li>
+                 <li class="last_nav"><a href="./kontakt.html">
+                     <span class="navbar__menu--uprava">Kontakt začněte zde
+                         <i class="fas"></i>
+                     </span>
+                 </a></li>
+             </menu>
+     </nav>
+</header>
+
+<main>
+    <h1>Galerie veškerých prací firmy Drobnostav</h1>
+    
+    <script src="https://eu.zonerama.com/embd/Js/64289610aa78182aec1704ab" type="text/javascript"></script>
+    <div id="znrm-64289610aa78182aec1704ab"><div style="height: 150px; padding-top:150px; border: 1px solid grey; background-color: lightgray; text-align: center; vertical-align: middle;">HTML galerie Zonerama<br />HTML galerie 3</div></div>
+</main>
+
+
+
+    <script src="./javascript/hamburger.js"></script> 
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    
+    <script type="text/javascript">
+    
+       $(document).ready(function() {
+         $('.drpdwn').click(function() {
+           $('.dropdown').toggleClass('active');
+         });
+       });
+       
+       $(document).ready(function() {
+         $('.hamburg').click(function() {
+           $('.hamburger-lines').toggleClass('opened');
+         });
+       });
+       
+       
+       $('.icon.hamburg').click(function() {
+         $(this).toggleClass('open');
+         if ($(this).hasClass('open')) {
+           $(this).find('i.fa').removeClass('fa-bars').addClass('fa-close');
+         } else {
+           $(this).find('i.fa').removeClass('fa-close').addClass('fa-bars');
+         }
+       });
+       
+       
+       </script>
+       <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+</body>
+</html>

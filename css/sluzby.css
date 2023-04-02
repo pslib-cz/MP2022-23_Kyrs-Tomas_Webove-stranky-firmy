@@ -165,11 +165,6 @@ i.fas--cervena::before {
 .ukazky_praci--image::after {
     content: none;
 }
-
-.ukazky_praci--image:hover {
-    transform: scale(1.015);
-    transition: all .27s;
-}
  
 .ukazy_praci--karta::before {
     content: none;
@@ -583,7 +578,7 @@ main {
         color: #EB0808;
     }
 
-    ul:hover a.active--site{
+    menu:hover a.active--site{
         color: black !important;
     }
 
@@ -638,3 +633,55 @@ main {
       .hamburger-lines.opened .line3 {
         transform: rotate(-45deg);
       }
+
+
+      .drpdwn
+      {
+        padding-left: 2em;
+      text-align: center;
+      display: inline-block;
+      line-height: 16px;
+      font-size: 20px;
+      }
+
+      .drpdwn i
+      {
+           right: auto;
+          top: auto;
+          transform: none;
+          position: relative;   
+      }
+
+
+      .ukazy_praci--karta img {
+        width: 360px;
+        height: 360px;
+        object-fit: cover;
+      }
+
+      .ukazy_praci--karta a {
+        display: block;
+      }
+
+      .side_view {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+      
+    .side_view img {
+        width: 6rem;
+        height: 4rem;
+        object-fit: cover;
+        cursor: pointer;
+        margin: 0.5rem;
+    }
+
+    .ukazy_praci--karta a {
+        display: block;
+        height: 360px;
+    }
+
+    .side_view--nophoto img:hover {
+        cursor: default;
+    }
