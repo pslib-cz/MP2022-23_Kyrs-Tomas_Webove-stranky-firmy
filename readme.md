@@ -1,4 +1,4 @@
 # Typography CSS library
 **Author:** *Tomáš Kyrš*
-## Demo site
+## Online site
 Link to **[online](https://drobnostav.online/)** site for preview.
