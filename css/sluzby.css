@@ -670,8 +670,8 @@ main {
     }
       
     .side_view img {
-        width: 6rem;
-        height: 4rem;
+        width: 6rem !important;
+        height: 4rem !important;
         object-fit: cover;
         cursor: pointer;
         margin: 0.5rem;
