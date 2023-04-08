@@ -17,6 +17,11 @@ footer .naceneni_tlacitko {
     margin-bottom: 2em;
   }
 
+  .drpdwn-desktop {
+    display: none !important;
+  }
+  
+
   .navbar__menu li ul.dropdown
   {
          display: none;
@@ -285,7 +290,12 @@ transition-property: all;
 transition-duration: 0.3s; 
 }  
 
+.drpdwn-mobile {
+  display: none;
+}
+
 .logo--mobile {
     display: none;
 }
 }
+

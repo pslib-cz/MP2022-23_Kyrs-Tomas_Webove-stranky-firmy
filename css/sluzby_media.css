@@ -17,6 +17,19 @@ and (max-width: 999px) {
           background: #f5f9fb;
       }
 
+      #ukazky {
+        padding-top: 0;
+      }
+
+      .quick_nav__karta .image div h5 {
+        font-size: 26px;
+      }
+
+      
+  .drpdwn-desktop {
+    display: none !important;
+  }
+
       .ukazy_praci--karta img {
         width: 100%;
         height: 100%;
@@ -389,6 +402,10 @@ and (max-width: 999px) {
     }  
 
     .logo--mobile {
+      display: none;
+    }
+
+    .drpdwn-mobile {
       display: none;
     }
     }

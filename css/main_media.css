@@ -10,6 +10,10 @@ and (max-width: 999px) {
         height: auto;
     }
 
+    
+  .drpdwn-desktop {
+    display: none !important;
+  }
 
     .navbar__menu li ul.dropdown
     {
@@ -525,5 +529,9 @@ max-width: 56%;
     .white-stripe {
       display: none;
       text-transform: uppercase;
+    }
+
+    .drpdwn-mobile {
+      display: none;
     }
   }

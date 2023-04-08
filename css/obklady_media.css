@@ -11,6 +11,11 @@ and (max-width: 999px) {
       background: #f5f9fb;
   }
 
+  
+  .drpdwn-desktop {
+    display: none !important;
+  }
+
   .logo--desktop {
     display: none;
   }
@@ -645,6 +650,10 @@ transition-property: all;
 -webkit-transition-duration: 0.3s;
 transition-duration: 0.3s; 
 }  
+
+.drpdwn-mobile {
+  display: none;
+}
 
 .logo--mobile {
   display: none;
