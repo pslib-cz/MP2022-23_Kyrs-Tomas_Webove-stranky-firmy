@@ -16,6 +16,11 @@ footer .naceneni_tlacitko {
     display: none !important;
   }
 
+  #formular {
+    max-width: 600px;
+    margin: 0 auto
+}
+
   .navbar__menu li ul.dropdown
   {
          display: none;
@@ -238,11 +243,6 @@ padding-bottom: 1em;
   transition: all .25s cubic-bezier(.645,.045,.355,1);
  }
 
-  .formular--tlacitko {
-    margin: 0 auto;
-    display: block;
-    margin-bottom: 3em;
-  }
   
 
   footer .omezeni_sirky {
@@ -270,15 +270,6 @@ main {
     max-width: 100%;
 }
 
-.formular--writing {
-    width: 250px;
-}
-
-.formular {
-    margin: 0 auto;
-    text-align: center;
-}
-
 .header_image > div {
     width: 90%;
     margin: 0 auto;
@@ -298,12 +289,6 @@ background: #fff;
 display: flex;
   }
 
-.formular {
-    padding: 0;
-    width: 90%;
-    margin: 0 auto;
-}
-
 .hamburger_on 
 {margin: 0; 
     height: 100%; 
@@ -322,11 +307,6 @@ display: flex;
     width: 100%;
    }
 
-.formular h2 {
-    margin: 0;
-    padding: 1em;
-}
-
 .quick_info {
     width: 60%;
     margin-bottom: 3em;
@@ -336,9 +316,6 @@ display: flex;
 @media only screen 
 and (min-width: 500px)
 and (max-width: 999px)  {
-    .formular--writing {
-        width: 350px;
-    }
 
     .header_image > div {
         margin: 0 auto;
@@ -349,31 +326,11 @@ and (max-width: 999px)  {
         margin-bottom: 3em;
     }
 
-    .formular h2 {
-        margin-top: 3em;
-    }
-
-    .formular--tlacitko {
-        font-size: 1.05em;
-        margin-bottom: 5em;
-    }
-
-    .formular {
-        padding: 1px 30px;
-        width: 80%;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-
 }
 
 @media only screen 
 and (min-width: 750px)
 and (max-width: 999px) {
-    .formular--writing {
-        width: 450px;
-    }
 
     .quick_info {
         width: 50%;
@@ -389,6 +346,10 @@ and (max-width: 1200px) {
         width: 30%;
     }
 
+    #formular {
+        margin-left: 0em;
+    }
+
     main {
         width: 100%;
     }
@@ -397,14 +358,6 @@ and (max-width: 1200px) {
         width: 50%;
     }
 
-    .formular {
-        margin-left: 0;
-        width: 60%;
-    }
-
-    .formular--writing {
-        width: 400px;
-    }
 }
 
 @media only screen 

@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="./css/kontakt.css">
-    <link rel="icon" type="image/x-icon" href="./img/logoo.png">
-    <link rel="stylesheet" href="./css/kontakt_media.css">
+    <link rel="stylesheet" href="../css/kontakt.css">
+    <link rel="icon" type="image/x-icon" href="../img/logoo.png">
+    <link rel="stylesheet" href="../css/kontakt_media.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Drobnostav | Kontakt</title>
 </head>
 <body class="home">
@@ -49,7 +51,6 @@
    </nav>
 </header>
 
-
    <div class="header_image">
     <div>
          <h1>Řekněte nám něco o 
@@ -57,36 +58,25 @@
             <p>nebo se s námi spojte přímo <a class="red" href="tel:+420702195309">(+420) 702 195 309.</a></p>
     </div>
    </div>
+
 <main>
-    <div class="formular">
-        <h2 style="font-size:30px">Kontaktujte Nás</h2>
-        <form accept-charset="UTF-8" action="https://getform.io/f/dc213d31-27b0-491d-a902-faa1527835c6" method="POST" enctype="multipart/form-data"  target="_blank" id="wpform">
-           <div>
-              <label>jméno</label>
-              <div>
-                 <input class="formular--writing" style="margin-top: 5px; background-color: #fff; height:35px; border: 0;" type="text" name="first_name" placeholder="Vyplňte celé jméno..." required="required">
-              </div>
-           </div>
-           <div>
-              <label>emailová adresa</label>
-              <div>
-                 <input class="formular--writing" style="margin-top: 5px;background-color: #fff; height:35px; border: 0;" type="email" name="email" placeholder="Vyplňte svůj email..." required="required">
-              </div>
-           </div>
-           <div>
-              <label>zpráva pro nás</label>
-              <div>
-                 <textarea class="formular--writing" style="margin-top: 5px;background-color: #fff; border: 0; height:50px;" name="message" placeholder="Nemůžeme se dočkat vašeho nápadu..." required="required"></textarea>
-              </div>
-           </div>
-           <div>
-              <label style="text-transform: capitalize;">nahrát dokument:</label>
-              <input type="file" name="file">
-           </div>
-           <input type="hidden" name="utf8" value="✓">
-           <button class="formular--tlacitko" type="submit">odeslat zprávu</button>
-        </form>
-     </div>
+<form id="formular" method="post"  action="mailto:info@drobnostav.online">
+  <label for="name">Vaše jméno</label>
+  <input type="text" name="name" id="name" required placeholder="Vaše celé jméno...">
+
+  <label for="email">Váš email</label>
+  <input type="email" name="email" id="email" required placeholder="Váš email...">
+
+  <label for="subject">Předmět</label>
+  <input type="text" name="subject" id="subject" required>
+
+  <label for="message">Zpráva pro nás</label>
+  <textarea name="message" id="message" required placeholder="Nemůžeme se dočkat vašeho nápadu..."></textarea>
+
+   <br>
+
+      <button>Odeslat email</button>
+</form>
     
      <div class="quick_info">
         <h3>Rodinná firma
